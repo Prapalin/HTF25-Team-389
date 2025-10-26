@@ -1,0 +1,328 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #121212; 
+  color: #e0e0e0; 
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #1f2937, #4b5563); 
+  color: #f3f4f6;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+main {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Stats Cards */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #1f1f1f; 
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  text-align: center;
+  width: 280px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  color: #4f46e5; 
+}
+
+.highlight {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #f3f4f6;
+  margin-top: 10px;
+}
+
+/* Progress Section */
+.progress {
+  background: #1f1f1f;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  margin-bottom: 40px;
+}
+
+.progress-bar {
+  background: #374151; 
+  border-radius: 20px;
+  height: 18px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.3s ease;
+}
+
+/* Table Section */
+.table-section {
+  background: #1f1f1f;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #374151; 
+}
+
+th {
+  background: #111827; 
+  color: #6366f1;
+  font-weight: 600;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.status.good {
+  background: #10b981;
+}
+
+.status.avg {
+  background: #facc15;
+  color: #111;
+}
+
+.status.low {
+  background: #ef4444;
+}
+
+/* Assignments Section */
+.assignments-section {
+  background: #1f1f1f;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  overflow-x: auto;
+  margin-top: 30px;
+}
+
+.assignments-section table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.assignments-section th,
+.assignments-section td {
+  padding: 12px;
+  border-bottom: 1px solid #374151; 
+}
+
+.assignments-section th {
+  background: #111827;
+  color: #6366f1;
+  font-weight: 600;
+}
+
+.assignments-section .status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: white;
+}
+
+.assignments-section .status.good {
+  background: #10b981; 
+}
+
+.assignments-section .status.avg {
+  background: #facc15; 
+  color: #111;
+}
+
+.assignments-section .status.low {
+  background: #ef4444; 
+}
+
+/* Exams Section */
+.exams-section {
+  background: #1f1f1f; 
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  overflow-x: auto;
+  margin-top: 30px;
+}
+
+.exams-section table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.exams-section th,
+.exams-section td {
+  padding: 12px;
+  border-bottom: 1px solid #374151; 
+}
+
+.exams-section th {
+  background: #111827; 
+  color: #6366f1; 
+  font-weight: 600;
+}
+
+.exams-section td {
+  color: #e0e0e0;
+}
+
+/* Apply to all tables */
+table tbody tr {
+  transition: transform 0.2s ease, background 0.2s ease; 
+  cursor: pointer;
+}
+
+table tbody tr:hover {
+  background: #2c2c2c; 
+  transform: scale(1.02); 
+}
+
+
+/* Add Grades Section */
+.add-grades {
+  background: #1f1f1f;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  margin-top: 30px;
+  text-align: center;
+}
+
+.add-grades form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.add-grades input {
+  padding: 8px;
+  border: 1px solid #374151;
+  border-radius: 5px;
+  width: 60%;
+  background: #111827;
+  color: #e0e0e0;
+}
+
+.add-grades button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 10px;
+}
+
+/* All sections and cards */
+.table-section, .assignments-section, .exams-section, .progress {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.table-section:hover, .assignments-section:hover, .exams-section:hover, .progress:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.7);
+}
+
+/* Assignments Section - slightly bluish dark */
+.assignments-section {
+  background: #1f2233; 
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  overflow-x: auto;
+  margin-top: 30px;
+}
+
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 50px;
+  border-top: 1px solid #2c2c2c;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+}
